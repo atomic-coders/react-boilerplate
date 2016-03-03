@@ -1,0 +1,294 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "React Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "xo && node server.js",
+    "test": "xo && karma start --single-run",
+    "test-ci": "karma start --single-run --reporters coverage,progress,teamcity",
+    "testing": "karma start --auto-watch",
+    "build": "jspm bundle src/main jspm_packages/build.js"
+  },
+  "xo": {
+    "space": 4,
+    "ignores": [
+      "jspm_packages/**",
+      "node_modules/**",
+      "config.js"
+    ],
+    "envs": [
+      "node",
+      "browser",
+      "mocha"
+    ],
+    "rules": {
+      "react/jsx-indent": [
+        2,
+        4
+      ],
+      "no-unused-expressions": 0,
+      "react/no-string-refs": 0
+    },
+    "extends": [
+      "xo-react"
+    ]
+  },
+  "keywords": [
+    "ui"
+  ],
+  "author": "React Boilerplate",
+  "dependencies": {
+    "express": "^4.13.4",
+    "http": "0.0.0",
+    "node-fetch": "^1.3.3",
+    "request-debug": "^0.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.5.0",
+    "babel-polyfill": "^6.5.0",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "chokidar": "^1.2.0",
+    "chokidar-socket-emitter": "^0.5.0",
+    "eslint": "^2.2.0",
+    "eslint-config-xo": "^0.11.0",
+    "eslint-config-xo-react": "^0.5.0",
+    "eslint-plugin-react": "^4.1.0",
+    "isparta": "^4.0.0",
+    "istanbul": "gotwarlost/istanbul.git#source-map",
+    "jspm": "^0.16.24",
+    "karma": "^0.13.19",
+    "karma-babel-preprocessor": "^6.0.1",
+    "karma-coverage": "douglasduteil/karma-coverage#next",
+    "karma-jspm": "^2.0.2",
+    "karma-mocha": "^0.2.2",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-teamcity-reporter": "^0.2.1",
+    "mocha": "^2.4.5",
+    "phantomjs-prebuilt": "^2.1.4",
+    "socket.io": "^1.3.7",
+    "systemjs": "^0.19.15",
+    "xo": "^0.12.1"
+  },
+  "jspm": {
+    "dependencies": {
+      "enzyme": "npm:enzyme@^2.0.0",
+      "fetch": "npm:whatwg-fetch@^0.11.0",
+      "fetch-stream": "npm:fetch-stream@^0.6.4",
+      "isomorphic-fetch": "npm:isomorphic-fetch@^2.2.1",
+      "lodash": "npm:lodash@^4.0.0",
+      "mocha-jsdom": "npm:mocha-jsdom@^1.0.0",
+      "moment": "npm:moment@^2.11.1",
+      "node-uuid": "npm:node-uuid@^1.4.7",
+      "oauth2-client-js": "npm:oauth2-client-js@0.0.15",
+      "papaparse": "npm:papaparse@^4.1.2",
+      "react": "npm:react@^0.14.6",
+      "react-addons-test-utils": "npm:react-addons-test-utils@^0.14.7",
+      "react-bootstrap": "npm:react-bootstrap@^0.28.2",
+      "react-bootstrap-table": "npm:react-bootstrap-table@^1.4.5",
+      "react-datagrid": "npm:react-datagrid@^2.0.1",
+      "react-dom": "npm:react-dom@^0.14.6",
+      "react-loader": "npm:react-loader@^2.0.0",
+      "react-paginate": "npm:react-paginate@^0.5.4",
+      "react-redux": "npm:react-redux@^4.2.1",
+      "react-router": "npm:react-router@^2.0.0-rc5",
+      "react-router-bootstrap": "npm:react-router-bootstrap@^0.20.1",
+      "redux": "npm:redux@^3.2.1",
+      "redux-mock-store": "npm:redux-mock-store@^0.0.6",
+      "redux-thunk": "npm:redux-thunk@^1.0.3",
+      "systemjs": "npm:systemjs@^0.19.20",
+      "systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@^0.5.5",
+      "whatwg-fetch": "npm:whatwg-fetch@^0.11.0"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "chai": "npm:chai@^3.5.0",
+      "core-js": "npm:core-js@^1.1.4"
+    },
+    "overrides": {
+      "npm:babel-core@5.8.35": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "npm:babel-runtime@5.8.35": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "npm:chai@3.5.0": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "npm:core-js@1.2.6": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "npm:enzyme@2.0.0": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "npm:whatwg-fetch@0.11.0": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "npm:fetch-stream@0.6.5": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "npm:isomorphic-fetch@2.2.1": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "npm:lodash@4.5.1": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "npm:mocha-jsdom@1.1.0": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "npm:moment@2.11.2": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "npm:node-uuid@1.4.7": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "npm:oauth2-client-js@0.0.15": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "npm:papaparse@4.1.2": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "npm:react@0.14.7": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "npm:react-addons-test-utils@0.14.7": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "npm:react-bootstrap@0.28.3": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "npm:react-bootstrap-table@1.5.3": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "npm:react-datagrid@2.0.2": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "npm:react-dom@0.14.7": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "npm:react-loader@2.0.0": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "npm:react-paginate@0.5.4": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "npm:react-redux@4.4.0": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "npm:react-router@2.0.0": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "npm:react-router-bootstrap@0.20.1": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "npm:redux@3.3.1": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "npm:redux-mock-store@0.0.6": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "npm:redux-thunk@1.0.3": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "npm:systemjs@0.19.23": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      },
+      "github:capaj/systemjs-hot-reloader@0.5.6": {
+        "map": {
+          "react/lib/ReactContext": "@empty",
+          "react/lib/ExecutionEnvironment": "@empty"
+        }
+      }
+    }
+  }
+}
