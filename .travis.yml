@@ -1,13 +1,16 @@
 language: node_js
 node_js:
-  - "5"
-  - "4"
-  - "0.10"
+- '5'
+- '4'
+- '0.10'
 before_script:
-  - npm install
-  - npm install -g jspm
-  - jspm install
+- npm install
+- npm install -g jspm
+- jspm install
 script: npm run build
 notifications:
   email:
     on_failure: change
+env:
+  global:
+    secure: nY5Fd4XJJ0qtAZz+N6DlCP46jHszYVHo+7EzeMiJQCpe7gk2j9TPlWj1dtmt3DWVWVhPlnAqZxnlg4RkybOOoZEzHHEKmZzAqZLu0UQCmVcYZDqt/bvfYhVwX4FlpSsYnxNh3U2rsT1ReNSuivORTqEN9DLjy4Xnm5GFW5W4bomC1IQ+EUyHq+lrAV+xwGtakhRjWZ5oeqdJo77ZnKlQGafKBSHUOwHX7RmB0IrDGfPMYJryVy9o4aKir/Ppm2v4ictTYrawBTb3MPCWwxz8xQAUj+rRAfCRFAreyNxTiUA8SirR7MRuVL2RRFQL2MgR9YIXB7ZOldTzZHhHbkFOyhTM4SlSrTGyP4A+QkuimXlO2Ieplvnq2eZZk2PE9tWpNIV1r/+YJLbO1nCftP74lJSKoZS266hkwdXypdPKRlEDajbUufyQTAKUUXQsPJ3jcijsgOpQQeZwDegv/OeD9YCpu7WE9IjNS8oDMYXfZDOHFO7CjFdlaEYvPy1mPfpcn4GmSaVDwtNygn3MDYC7EbrqMPWBQtijc//0c1UFmba/IyUF3GaxUG4EvSJCqf8bQZ2WbLlPpPqp6txMAb8c0POi/1gPob3CxbA5rQR1EwGNC+UNwSRLwV7H2UEFecqF56yCngepQWtg6o9I6OKyhGY8XpBzuObh457dMtBKYdY=
