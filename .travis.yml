@@ -6,6 +6,7 @@ node_js:
 before_script:
 - npm install -g jspm
 - jspm config registries.github.auth $JSPM_GITHUB_AUTH_TOKEN
+- jspm install
 script: npm test
 notifications:
   email:
