@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "5"
+  - "4"
+  - "0.10"
+before_script:
+  - npm install
+  - npm install -g jspm
+  - jspm install
+script: npm run build
+notifications:
+  email:
+    on_failure: change
