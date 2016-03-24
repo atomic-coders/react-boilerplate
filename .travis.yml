@@ -1,8 +1,6 @@
 language: node_js
 node_js:
 - '5'
-- '4'
-- '0.10'
 before_script:
 - npm install -g jspm
 - jspm config registries.github.auth $JSPM_GITHUB_AUTH_TOKEN
