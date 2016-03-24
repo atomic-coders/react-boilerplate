@@ -4,9 +4,8 @@ node_js:
 - '4'
 - '0.10'
 before_script:
-- npm install
 - npm install -g jspm
-- jspm install
+- jspm config registries.github.auth $JSPM_GITHUB_AUTH_TOKEN
 script: npm run build
 notifications:
   email:
