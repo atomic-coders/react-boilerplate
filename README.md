@@ -1,6 +1,6 @@
 # React Boilerplate
 
-[![Dependency Status][dep-status-img]][dep-status-link] [![devDependency Status][dev-dep-status-img]][dev-dep-status-link] [![Build Status][ci-img]][ci]
+[![Dependency Status](https://david-dm.org/atomic-coders/react-boilerplate.svg)](https://david-dm.org/atomic-coders/react-boilerplate)
 
 Yet another starter boilerplate with lot's of goodies: ReactJS, Redux, ES2015, JSPM, hot-reloading, Karma + Mocha + Enzyme + Chai, Istanbul + isparta, ESLint + XO
 
