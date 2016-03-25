@@ -3,7 +3,7 @@
 [![Dependency Status](https://david-dm.org/atomic-coders/react-boilerplate.svg)](https://david-dm.org/atomic-coders/react-boilerplate)
 [![Build Status](https://travis-ci.org/atomic-coders/react-boilerplate.svg?branch=master)](https://travis-ci.org/atomic-coders/react-boilerplate)
 
-Yet another starter boilerplate with lot's of goodies: ReactJS, Redux, ES2015, JSPM, hot-reloading, Karma + Mocha + Enzyme + Chai, Istanbul + isparta, ESLint + XO
+Yet another starter boilerplate with lot's of goodies: React, Redux, ES2015, JSPM, hot-reloading, Karma + Mocha + Enzyme + Chai, Istanbul + isparta, ESLint + XO
 
 ## Features
 - [**Redux**](https://github.com/rackt/redux) 
