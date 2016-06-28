@@ -98,6 +98,7 @@
       "redux": "npm:redux@^3.2.1",
       "redux-mock-store": "npm:redux-mock-store@^0.0.6",
       "redux-thunk": "npm:redux-thunk@^1.0.3",
+      "sinon": "npm:sinon@^1.17.4",
       "systemjs": "npm:systemjs@^0.19.20",
       "systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@^0.5.5",
       "whatwg-fetch": "npm:whatwg-fetch@^0.11.0"
